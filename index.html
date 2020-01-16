@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>RockPaperScissors</title>
+</head>
+
+<body>
+    <header>
+        <h1>Are you ready to battle?</h1>
+    </header>
+    <main>
+        <p class="rules">
+            Here are the rules:<br>
+            Rock beats Scissors <br>
+            Paper beats Rock <br>
+            Scissors beats paper
+        </p>
+        <div class="game-choices">
+            <input type="radio" name="game" value="Rock">
+            <label for="Rock">Rock</label>
+            <input type="radio" name="game" value="Paper">
+            <label for="Paper">Paper</label>
+            <input type="radio" name="game" value="Scissors">
+            <label for="Scissors">Scissors</label>
+        </div>
+        <button>Battle</button>
+        <div class="results-score">
+            <p>Wins: <span id="wins"></span>
+            Losses: <span id="losses"></span>
+            Draws: <span id="draws"></span>
+            </p>
+            <p>
+                You chose: <span id="user-choice"></span> <br>
+                The NPC chose: <span id="npc-choice"></span> <br>
+                <span id="results"></span>
+            </p>
+        </div>
+    </main>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
