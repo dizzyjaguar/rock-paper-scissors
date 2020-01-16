@@ -16,7 +16,10 @@ battleButton.addEventListener('click', () =>{
     const humanInput = document.querySelector('input:checked');
     const humanChoice = humanInput.value;
     const npcChose = getRandomThrow();
-    const result = checkResult(humanChoice, npcChoice);
+    const result = checkResult(humanChoice, npcChose);
+    console.log('user', humanChoice);
+    console.log('comp', npcChose);
+    console.log('result', result);
     
     userChoice.textContent = humanChoice;
     npcChoice.textContent = npcChose;

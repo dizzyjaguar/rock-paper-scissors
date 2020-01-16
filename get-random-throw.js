@@ -1,9 +1,9 @@
-export {getRandomThrow, getThrowFromNumber, checkResult};
+export { getRandomThrow, getThrowFromNumber, checkResult };
 
 const getRandomThrow = () => {
     let randomNumber = Math.floor(Math.random() * 3);
     return getThrowFromNumber(randomNumber);
-}
+};
 
 const getThrowFromNumber = (number) => {
     if (number === 0) return 'rock';
@@ -14,9 +14,20 @@ const getThrowFromNumber = (number) => {
 const checkResult = (human, npc) => {
     if (human === npc) return 'draw';
 
-    if (human === 'rock' && npc === 'scissors') return 'win';
-    else if (human === 'paper' && npc === 'rock') return 'win';
-    else if (human === 'scissors' && npc === 'paper') return 'win';
-    else return 'lose';
+    // if (human === 'rock' && npc === 'scissors') return 'win';
+    // else if (human === 'paper' && npc === 'rock') return 'win';
+    // else if (human === 'scissors' && npc === 'paper') return 'win';
+    // else return 'lose';
+    if (human === 'rock' && npc === 'scissors') {
+        return 'win';
+    } else if (human === 'paper' && npc === 'rock'){
+        return 'win';
+    } else if (human === 'scissors' && npc === 'paper'){
+        return 'win';
+    } else {
+        return 'lose';
+    }
+
+
 };
 
