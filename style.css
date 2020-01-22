@@ -1,0 +1,70 @@
+body {
+    background-color: aqua;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+img {
+    max-width: 50px;
+    height: auto;
+}
+
+.rules {
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    color: sienna;
+}
+
+.rules-div {
+    border-style: dotted;
+    border-width: 5px;
+    border-color: rgb(4, 104, 45);
+}
+
+.game-choices {
+    text-align: center;
+    color: rgb(25, 27, 151);
+    margin: 30px;
+}
+
+.button {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.results-score {
+    text-align: center;
+    color: rgb(172, 57, 37);
+    word-spacing: 10px;
+    font-size: 20px;
+}
+
+#battle-button {
+    color: rgb(177, 15, 42);
+    background-color: forestgreen;
+    border-radius: 5rem;
+    width: 70px;
+    height: 50px;
+    font-size: 20px;
+    border-width: 5px;
+    border-color: rgb(127, 47, 255);
+}
+
+#battle-button:hover {
+    cursor: pointer;
+    width: 75px;
+    height: 55px;
+    background-color: rgb(7, 70, 7);
+}
+
+#results {
+    color: rgb(151, 36, 15);
+    font-weight: 900;
+    font-size: 30px;
+}
+
